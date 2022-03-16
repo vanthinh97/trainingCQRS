@@ -50,5 +50,33 @@ namespace Management.API.Controllers
         {
             return await ExecuteCommand(command, cancellationToken);
         }
+
+        /// <summary>
+        /// API ChangePW người dùng
+        /// </summary>
+        /// <param name="command"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        [Route("change-password")]
+        [HttpPost]
+        [ProducesResponseType(typeof(JsonResponse<int>), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> ChangePasswordAsync([FromBody] ChangePasswordCommand command, CancellationToken cancellationToken)
+        {
+            return await ExecuteCommand(command, cancellationToken);
+        }
+
+        /// <summary>
+        /// Delete người dùng
+        /// </summary>
+        /// <param name="command"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        [Route("delete")]
+        [HttpPost]
+        [ProducesResponseType(typeof(JsonResponse<int>), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> DeleteUsersAsync([FromBody] DeleteUsersCommand command, CancellationToken cancellationToken)
+        {
+            return await ExecuteCommand(command, cancellationToken);
+        }
     }
 }

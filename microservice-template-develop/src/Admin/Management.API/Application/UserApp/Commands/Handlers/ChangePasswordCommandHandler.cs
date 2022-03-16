@@ -9,44 +9,38 @@ using System.Threading.Tasks;
 namespace Management.API.Application.UserApp.Commands.Handlers
 {
     /// <summary>
-    /// Lớp xử lý của <see cref="CreateUserCommandHandler"/>.
+    /// Lớp xử lý của <see cref="ChangePasswordCommandHandler"/>.
     /// </summary>
-    public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, JsonResponse<int>>
+    public class ChangePasswordCommandHandler : IRequestHandler<ChangePasswordCommand, JsonResponse<int>>
     {
         private readonly IUserRepository _userRepository;
         private readonly ICommonHelper _commonHelper;
+
         /// <summary>
-        /// Hàm khởi tạo của lớp <see cref="CreateUserCommandHandler"/>
+        /// Hàm khởi tạo của lớp <see cref="ChangePasswordCommandHandler"/>
         /// </summary>
         /// <param name="userRepository"></param>
-        /// /// <param name="commonHelper"></param>
-        public CreateUserCommandHandler(IUserRepository userRepository, ICommonHelper commonHelper)
+        public ChangePasswordCommandHandler(IUserRepository userRepository, ICommonHelper commonHelper)
         {
             _userRepository = userRepository;
             _commonHelper = commonHelper;
         }
 
         /// <summary>
-        /// Handler.
+        /// Handler
         /// </summary>
         /// <param name="request"></param>
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
-        public async Task<JsonResponse<int>> Handle(CreateUserCommand request, CancellationToken cancellationToken)
+        /// <exception cref="System.NotImplementedException"></exception>
+        public async Task<JsonResponse<int>> Handle(ChangePasswordCommand request, CancellationToken cancellationToken)
         {
-            var checkEmail = await _userRepository.GetByEmailAsync(request.Email);
-            if (checkEmail != null)
-            {
-                return new BadRequestResponse<int>("Email đã tồn tại", null);
-            }
+            var user = await _userRepository.GetUserByIdAsync(request.Id);
+            if (user == null) return new BadRequestResponse<int>("User k tồn tại", null);
 
-            //Hash password
-            request.Password = _commonHelper.HashSha256(request.Password);
+            if (user.Password != _commonHelper.HashSha256(request.OldPassword)) return new BadRequestResponse<int>("PW nhập k đúng", null);
 
-            //Add user
-            var user = new User(request.FirstName, request.LastName, request.Email, request.Password, request.BirthDay);
-            await _userRepository.AddAsync(user);
-
+            user.Password = _commonHelper.HashSha256(request.NewPassword);
 
             if (!await _userRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken))
             {

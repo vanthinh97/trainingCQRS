@@ -9,5 +9,7 @@ namespace Management.Domain.Models.UserAggregate
     public interface IUserRepository : IRepository<User>
     {
         Task<User> GetByEmailAsync(string email);
+
+        Task<User> GetUserByIdAsync(int id);
     }
 }
