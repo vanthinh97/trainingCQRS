@@ -18,6 +18,7 @@ namespace Management.Infrastructure.EntityConfigurations
             builder.Property(x => x.BirthDay).IsRequired(false);
 
             builder.Metadata.FindNavigation(nameof(User.GroupUsers))?.SetPropertyAccessMode(PropertyAccessMode.Field);
+            builder.Metadata.FindNavigation(nameof(User.OrganizationUsers))?.SetPropertyAccessMode(PropertyAccessMode.Field);
         }
     }
 }

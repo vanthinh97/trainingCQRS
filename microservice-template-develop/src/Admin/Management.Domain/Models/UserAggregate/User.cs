@@ -1,4 +1,5 @@
 ﻿using Management.Domain.Models.GroupUserAggregate;
+using Management.Domain.Models.OrganizationUserAggregate;
 using Microservices.Core.Domain.SeedWork;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ namespace Management.Domain.Models.UserAggregate
     public class User : Entity
     {
         private List<GroupUser> _groupUsers;
+        private List<OrganizationUser> _organizationUsers;
         /// <summary>
         /// Hàm khởi tạo của lớp <see cref="User"/>
         /// </summary>
@@ -29,6 +31,7 @@ namespace Management.Domain.Models.UserAggregate
         public User()
         {
             _groupUsers = new List<GroupUser>();
+            _organizationUsers = new List<OrganizationUser>();
         }
 
         public void Update(string firstName, string lastName,  DateTime? birthDay)
@@ -39,6 +42,7 @@ namespace Management.Domain.Models.UserAggregate
         }
 
         public IReadOnlyCollection<GroupUser> GroupUsers => _groupUsers ??= new List<GroupUser>();
+        public IReadOnlyCollection<OrganizationUser> OrganizationUsers => _organizationUsers ??= new List<OrganizationUser>();
 
         public void AddGroup(List<int> groupIds)
         {

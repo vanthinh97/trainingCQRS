@@ -31,7 +31,5 @@ namespace Management.Domain.Models.GroupAggregate
         public string Name { get; set; }
         public string Code { get; set; }
         public string Description { get; set; }
-
-      //  public ICollection<GroupUser> groupUsers { get; set; }
     }
 }
