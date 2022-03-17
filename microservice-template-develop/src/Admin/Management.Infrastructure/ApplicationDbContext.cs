@@ -1,5 +1,7 @@
 ﻿#region
 
+using Management.Domain.Models.GroupAggregate;
+using Management.Domain.Models.GroupUserAggregate;
 using Management.Domain.Models.UserAggregate;
 using Management.Infrastructure.EntityConfigurations;
 using MediatR;
@@ -21,6 +23,8 @@ namespace Management.Infrastructure
         #endregion
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Group> Groups { get; set; }
+        public DbSet<GroupUser> GroupUsers { get; set; }
 
         #region Methods
 
