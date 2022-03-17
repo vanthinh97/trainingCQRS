@@ -17,7 +17,7 @@ namespace Management.Domain.Models.UserAggregate
         /// <param name="email"></param>
         /// <param name="password"></param>
         /// <param name="birthDay"></param>
-        public User(string firstName, string lastName, string email, string password, DateTime? birthDay)
+        public User(string firstName, string lastName, string email, string password, DateTime? birthDay) : this()
         {
             FirstName = firstName;
             LastName = lastName;
@@ -39,6 +39,14 @@ namespace Management.Domain.Models.UserAggregate
         }
 
         public IReadOnlyCollection<GroupUser> GroupUsers => _groupUsers ??= new List<GroupUser>();
+
+        public void AddGroup(List<int> groupIds)
+        {
+            foreach (var item in groupIds)
+            {
+                _groupUsers.Add(new GroupUser(item));
+            }
+        }
 
         public string FirstName { get; set; }
         public string LastName { get; set; }

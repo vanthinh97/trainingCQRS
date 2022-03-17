@@ -16,6 +16,12 @@ namespace Management.Domain.Models.GroupUserAggregate
         }
 
         public int GroupId { get; set; }
+
+        public GroupUser(int groupId)
+        {
+            GroupId = groupId;
+        }
+
         public int UserId { get; set; }
     }
 }
