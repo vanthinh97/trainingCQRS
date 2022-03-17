@@ -33,13 +33,31 @@ namespace Management.API.Application.UserApp.Commands.Handlers
         /// <exception cref="System.NotImplementedException"></exception>
         public async Task<JsonResponse<int>> Handle(DeleteUsersCommand request, CancellationToken cancellationToken)
         {
-            foreach (var item in request.Ids)
+
+            //foreach (var item in request.Ids)
+            //{
+            //    var user = await _userRepository.GetUserByIdAsync(item);
+            //    if (user == null)
+            //    {
+            //        return new BadRequestResponse<int>($"user id {item} k tồn tại", null);
+            //    }
+            //    user.IsDeleted = true;
+            //}
+
+            //if (!await _userRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken))
+            //{
+            //    return new BadRequestResponse<int>("Đã xảy ra lỗi", null);
+            //}
+
+            var users = await _userRepository.GetListAsync(request.Ids);
+
+            if (request.Ids.Count != users.Count)
             {
-                var user = await _userRepository.GetUserByIdAsync(item);
-                if (user == null)
-                {
-                    return new BadRequestResponse<int>($"user id {item} k tồn tại", null);
-                }
+                return new BadRequestResponse<int>($"Dữ liệu k hợp lệ", null);
+            }
+
+            foreach (var user in users)
+            {
                 user.IsDeleted = true;
             }
 
@@ -47,7 +65,6 @@ namespace Management.API.Application.UserApp.Commands.Handlers
             {
                 return new BadRequestResponse<int>("Đã xảy ra lỗi", null);
             }
-
             return new OkResponse<int>("OK");
         }
     }

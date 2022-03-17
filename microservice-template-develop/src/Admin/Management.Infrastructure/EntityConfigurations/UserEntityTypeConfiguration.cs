@@ -1,9 +1,6 @@
 ﻿using Management.Domain.Models.UserAggregate;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Management.Infrastructure.EntityConfigurations
 {
@@ -19,6 +16,8 @@ namespace Management.Infrastructure.EntityConfigurations
             builder.Property(x => x.Password).IsRequired();
             builder.Property(x => x.Phone).HasMaxLength(50).IsRequired(false);
             builder.Property(x => x.BirthDay).IsRequired(false);
+
+            builder.Metadata.FindNavigation(nameof(User.GroupUsers))?.SetPropertyAccessMode(PropertyAccessMode.Field);
         }
     }
 }

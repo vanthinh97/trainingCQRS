@@ -1,5 +1,6 @@
 ﻿using Management.API.Application.UserApp.Commands.Models;
 using Management.API.Helper;
+using Management.Domain.Models.GroupUserAggregate;
 using Management.Domain.Models.UserAggregate;
 using MediatR;
 using Microservices.Core.API.Response;
@@ -52,6 +53,12 @@ namespace Management.API.Application.UserApp.Commands.Handlers
             {
                 return new BadRequestResponse<int>("Đã xảy ra lỗi", null);
             }
+
+            //foreach (var item in request.GroupIds)
+            //{
+            //    var abc = new GroupUser { GroupId = item, UserId = user.Id };
+
+            //}
 
             return new OkResponse<int>("OK", user.Id);
         }

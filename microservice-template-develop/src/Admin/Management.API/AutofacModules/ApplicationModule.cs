@@ -6,6 +6,8 @@
 using Autofac;
 using Management.API.Helper;
 using Management.Domain.Models.UserAggregate;
+using Management.Domain.Queries.UserAggregate;
+using Management.Infrastructure.Queries;
 using Management.Infrastructure.Repositories;
 
 namespace Management.API.AutofacModules
@@ -22,6 +24,7 @@ namespace Management.API.AutofacModules
         {
             builder.RegisterType<UserRepository>().As<IUserRepository>().InstancePerLifetimeScope();
             builder.RegisterType<CommonHelper>().As<ICommonHelper>().InstancePerLifetimeScope();
+            builder.RegisterType<UserQueries>().As<IUserQueries>().InstancePerLifetimeScope();
         }
 
         #endregion

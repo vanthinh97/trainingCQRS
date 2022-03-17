@@ -2,6 +2,7 @@
 using Microservices.Core.API.Response;
 using Microservices.Core.EventBus.CommandBus.Abstractions;
 using System;
+using System.Collections.Generic;
 
 namespace Management.API.Application.UserApp.Commands.Models
 {
@@ -12,5 +13,7 @@ namespace Management.API.Application.UserApp.Commands.Models
         public string Email { get; set; }
         public string Password { get; set; }
         public DateTime? BirthDay { get; set; }
+
+        public List<int> GroupIds { get; set; }
     }
 }

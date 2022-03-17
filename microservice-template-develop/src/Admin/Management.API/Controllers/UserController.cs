@@ -1,4 +1,5 @@
 ﻿using Management.API.Application.UserApp.Commands.Models;
+using Management.API.Application.UserApp.Queries.Models;
 using MediatR;
 using Microservices.Core.API.Response;
 using Microsoft.AspNetCore.Mvc;
@@ -77,6 +78,34 @@ namespace Management.API.Controllers
         public async Task<IActionResult> DeleteUsersAsync([FromBody] DeleteUsersCommand command, CancellationToken cancellationToken)
         {
             return await ExecuteCommand(command, cancellationToken);
+        }
+
+        /// <summary>
+        /// Lấy ra dữ liệu 1 người dùng
+        /// </summary>
+        /// <param name="query"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        [Route("get-detail")]
+        [HttpGet]
+        [ProducesResponseType(typeof(JsonResponse<int>), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> GetUserDetailAsync([FromQuery] GetUserDetailQuery query, CancellationToken cancellationToken)
+        {
+            return await ExecuteCommand(query, cancellationToken);
+        }
+
+        /// <summary>
+        /// Lấy ra dữ liệu n người dùng
+        /// </summary>
+        /// <param name="query"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        [Route("get-list")]
+        [HttpGet]
+        [ProducesResponseType(typeof(JsonResponse<int>), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> GetUsersAsync([FromQuery] GetUsersQuery query, CancellationToken cancellationToken)
+        {
+            return await ExecuteCommand(query, cancellationToken);
         }
     }
 }

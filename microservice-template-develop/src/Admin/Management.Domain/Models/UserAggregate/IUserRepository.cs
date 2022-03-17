@@ -11,5 +11,7 @@ namespace Management.Domain.Models.UserAggregate
         Task<User> GetByEmailAsync(string email);
 
         Task<User> GetUserByIdAsync(int id);
+
+        Task<List<User>> GetListAsync(List<int> ids);
     }
 }
