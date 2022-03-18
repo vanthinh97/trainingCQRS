@@ -107,5 +107,19 @@ namespace Management.API.Controllers
         {
             return await ExecuteCommand(query, cancellationToken);
         }
+
+        /// <summary>
+        /// update group nguoi dung
+        /// </summary>
+        /// <param name="command"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        [Route("update-group")]
+        [HttpPut]
+        [ProducesResponseType(typeof(JsonResponse<int>), (int)HttpStatusCode.OK)]
+        public async Task<IActionResult> UpdateGroupAsync([FromBody] UpdateGroupUserCommand command, CancellationToken cancellationToken)
+        {
+            return await ExecuteCommand(command, cancellationToken);
+        }
     }
 }
