@@ -1,10 +1,11 @@
 ﻿using Dapper;
+using Management.Domain.Queries.GroupAggregate;
 using Management.Domain.Queries.UserAggregate;
 using Microservices.Core.Domain.SeedWork;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Management.Infrastructure.Queries
@@ -19,12 +20,21 @@ namespace Management.Infrastructure.Queries
         {
             return await WithConnection(async conn =>
             {
-                var sql = @"select FirstName, LastName, Email, BirthDay from Users WHERE id = @id";
+                var sqlUserDetail = @"select FirstName, LastName, Email, BirthDay from Users WHERE id = @id;";
 
-                return await conn.QueryFirstOrDefaultAsync<UserDetailDto>(sql, new
+                var sqlGroupOfUser = @"select g.Id, g.Name from groups g
+                                    join GroupUsers gu ON g.Id = gu.GroupId
+                                    where gu.UserId = @id";
+
+                using var multiple = await conn.QueryMultipleAsync(sqlUserDetail + sqlGroupOfUser, new
                 {
                     id
                 });
+                var user = multiple.Read<UserDto>().FirstOrDefault();
+                var lstGroup = multiple.Read<GroupDto>().ToList();
+
+
+                return new UserDetailDto(user.FirstName, user.Email, lstGroup);
             });
        
         }
