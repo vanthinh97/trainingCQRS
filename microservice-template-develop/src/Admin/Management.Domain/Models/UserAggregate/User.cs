@@ -52,6 +52,14 @@ namespace Management.Domain.Models.UserAggregate
             }
         }
 
+        public void AddOrganization(List<int> organizationIds)
+        {
+            foreach (var item in organizationIds)
+            {
+                _organizationUsers.Add(new OrganizationUser(item));
+            }
+        }
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }

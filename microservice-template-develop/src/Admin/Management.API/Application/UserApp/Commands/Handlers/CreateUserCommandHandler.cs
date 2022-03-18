@@ -2,6 +2,7 @@
 using Management.API.Helper;
 using Management.Domain.Models.GroupAggregate;
 using Management.Domain.Models.GroupUserAggregate;
+using Management.Domain.Models.OrganizationAggregate;
 using Management.Domain.Models.UserAggregate;
 using MediatR;
 using Microservices.Core.API.Response;
@@ -17,22 +18,24 @@ namespace Management.API.Application.UserApp.Commands.Handlers
     {
         private readonly IUserRepository _userRepository;
         private readonly IGroupRepository _groupRepository;
-        //private readonly IGroupUserRepository _groupUserRepository;
+        private readonly IOrganizationRepository _organizationRepository;
         private readonly ICommonHelper _commonHelper;
         /// <summary>
         /// Hàm khởi tạo của lớp <see cref="CreateUserCommandHandler"/>
         /// </summary>
         /// <param name="userRepository"></param>
         /// <param name="groupRepository"></param>
+        /// <param name="organizationRepository"></param>
         /// <param name="commonHelper"></param>
-        public CreateUserCommandHandler(IUserRepository userRepository, ICommonHelper commonHelper,
-            //IGroupUserRepository groupUserRepository, 
-            IGroupRepository groupRepository)
+        public CreateUserCommandHandler(
+            IUserRepository userRepository, 
+            ICommonHelper commonHelper,
+            IGroupRepository groupRepository, IOrganizationRepository organizationRepository)
         {
             _userRepository = userRepository;
             _commonHelper = commonHelper;
-            //_groupUserRepository = groupUserRepository;
             _groupRepository = groupRepository;
+            _organizationRepository = organizationRepository;
         }
 
         /// <summary>
@@ -56,6 +59,13 @@ namespace Management.API.Application.UserApp.Commands.Handlers
                 return new BadRequestResponse<int>($"Dữ liệu k hợp lệ", null);
             }
 
+            //check list organizations
+            var organizations = await _organizationRepository.GetListAsync(request.OrganizationIds);
+            if (request.OrganizationIds.Count != organizations.Count)
+            {
+                return new BadRequestResponse<int>($"Dữ liệu k hợp lệ", null);
+            }
+
             //Hash password
             request.Password = _commonHelper.HashSha256(request.Password);
 
@@ -63,6 +73,7 @@ namespace Management.API.Application.UserApp.Commands.Handlers
             //Add user
             var user = new User(request.FirstName, request.LastName, request.Email, request.Password, request.BirthDay);
             user.AddGroup(request.GroupIds);
+            user.AddOrganization(request.OrganizationIds);
             await _userRepository.AddAsync(user);
 
 
