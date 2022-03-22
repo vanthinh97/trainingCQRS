@@ -8,5 +8,6 @@
         /// <param name="data"></param>
         /// <returns></returns>
         string HashSha256(string data);
+        string CreateToken(string email);
     }
 }

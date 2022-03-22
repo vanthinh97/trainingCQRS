@@ -5,6 +5,7 @@
 
 using Autofac;
 using Management.API.Helper;
+using Management.Domain.Models.AccountAggregate;
 using Management.Domain.Models.GroupAggregate;
 using Management.Domain.Models.GroupUserAggregate;
 using Management.Domain.Models.OrganizationAggregate;
@@ -31,6 +32,7 @@ namespace Management.API.AutofacModules
             builder.RegisterType<GroupUserRepository>().As<IGroupUserRepository>().InstancePerLifetimeScope();
             builder.RegisterType<OrganizationRepository>().As<IOrganizationRepository>().InstancePerLifetimeScope();
             builder.RegisterType<OrganizationUserRepository>().As<IOrganizationUserRepository>().InstancePerLifetimeScope();
+            builder.RegisterType<AccountRepository>().As<IAccountRepository>().InstancePerLifetimeScope();
 
 
             builder.RegisterType<CommonHelper>().As<ICommonHelper>().InstancePerLifetimeScope();

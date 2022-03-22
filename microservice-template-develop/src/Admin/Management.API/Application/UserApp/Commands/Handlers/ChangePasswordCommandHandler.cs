@@ -20,6 +20,7 @@ namespace Management.API.Application.UserApp.Commands.Handlers
         /// Hàm khởi tạo của lớp <see cref="ChangePasswordCommandHandler"/>
         /// </summary>
         /// <param name="userRepository"></param>
+        /// <param name="commonHelper"></param>
         public ChangePasswordCommandHandler(IUserRepository userRepository, ICommonHelper commonHelper)
         {
             _userRepository = userRepository;

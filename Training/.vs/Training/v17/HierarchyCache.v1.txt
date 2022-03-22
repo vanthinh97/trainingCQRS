@@ -3,50 +3,87 @@ i:{00000000-0000-0000-0000-000000000000}:Training.sln
 ++Management.API
 i:{00000000-0000-0000-0000-000000000000}:Management.API
 ++Connected Services 
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>663
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>825
 ++Dependencies
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>662
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:>358
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>423
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>824
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:>556
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>555
 ++Properties
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\properties\
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\properties\
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\properties\
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\properties\
 ++Application
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\application\
-++User
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\
+++UserApp
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\
 ++Commands
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\application\userapp\commands\
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\
 ++Handlers
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\application\userapp\commands\handlers\
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\handlers\
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\queries\handlers\
+++ChangePasswordCommandHandler.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\handlers\changepasswordcommandhandler.cs
 ++CreateUserCommandHandler.cs
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\application\userapp\commands\handlers\createusercommandhandler.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\handlers\createusercommandhandler.cs
+++DeleteUsersCommandHandler.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\handlers\deleteuserscommandhandler.cs
+++UpdateGroupUserCommandHandler.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\handlers\updategroupusercommandhandler.cs
+++UpdateUserCommandHandler.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\handlers\updateusercommandhandler.cs
 ++Models
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\huongviet\training\microservice-template-develop\src\admin\management.domain\models\
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\application\userapp\commands\models\
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\models\
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\queries\models\
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\
+++ChangePasswordCommand.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\models\changepasswordcommand.cs
 ++CreateUserCommand.cs
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\application\userapp\commands\models\createusercommand.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\models\createusercommand.cs
+++DeleteUsersCommand.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\models\deleteuserscommand.cs
+++UpdateGroupUserCommand.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\models\updategroupusercommand.cs
+++UpdateUserCommand.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\models\updateusercommand.cs
+++Validators
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\validators\
+++CreateUserCommandValidator.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\commands\validators\createusercommandvalidator.cs
 ++Queries
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\huongviet\training\microservice-template-develop\src\admin\management.domain\queries\
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\queries\
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\application\userapp\queries\
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\queries\
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\queries\
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\queries\
+++GetUserDetailQueryHandler.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\queries\handlers\getuserdetailqueryhandler.cs
+++GetUsersQueryHandler.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\queries\handlers\getusersqueryhandler.cs
+++GetUserDetailQuery.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\queries\models\getuserdetailquery.cs
+++GetUsersQuery.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\application\userapp\queries\models\getusersquery.cs
 ++AutofacModules
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\autofacmodules\
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\autofacmodules\
 ++ApplicationModule.cs
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\autofacmodules\applicationmodule.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\autofacmodules\applicationmodule.cs
 ++Controllers
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\controllers\
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\controllers\
 ++UserController.cs
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\controllers\usercontroller.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\controllers\usercontroller.cs
+++Helper
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\helper\
+++CommonHelper.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\helper\commonhelper.cs
+++ICommonHelper.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\helper\icommonhelper.cs
 ++appsettings.json
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\appsettings.json
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\appsettings.json
 ++Dockerfile
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\dockerfile
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\dockerfile
 ++Program.cs
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\program.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\program.cs
 ++Startup.cs
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\startup.cs
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\startup.cs
 ++No service dependencies discovered
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>664
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>826
 ++Analyzers
 i:{92c357e5-17e2-403f-b6a0-f00807f55529}:analyzers
 i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:analyzers
@@ -66,7 +103,7 @@ i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:packages
 i:{92c357e5-17e2-403f-b6a0-f00807f55529}:projects
 i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:projects
 ++launchSettings.json
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\properties\launchsettings.json
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\properties\launchsettings.json
 ++Microsoft.AspNetCore.Analyzers
 i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
 ++Microsoft.AspNetCore.Components.Analyzers
@@ -77,162 +114,213 @@ i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\program files\dotnet\sdk\6.0.201\sdk
 i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.14\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\.nuget\packages\microsoft.entityframeworkcore.analyzers\3.1.14\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
 ++Microservices.Core
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\shared\microservices.core.dll
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\huongviet\training\microservice-template-develop\src\shared\microservices.core.dll
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\shared\microservices.core.dll
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\shared\microservices.core.dll
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\shared\microservices.core.dll
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\shared\microservices.core.dll
 ++Microservices.Languages
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\shared\microservices.languages.dll
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\shared\microservices.languages.dll
 ++Microsoft.AspNetCore.App
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\microsoft.aspnetcore.app
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\microsoft.aspnetcore.app
 ++Microsoft.NETCore.App
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\microsoft.netcore.app
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\huongviet\training\microservice-template-develop\src\admin\management.domain\microsoft.netcore.app
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\microsoft.netcore.app
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.api\microsoft.netcore.app
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\microsoft.netcore.app
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\microsoft.netcore.app
 ++AspNetCore.HealthChecks.MongoDb (3.1.3)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>727
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>887
 ++AspNetCore.HealthChecks.Rabbitmq (3.1.4)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>726
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>885
 ++AspNetCore.HealthChecks.SqlServer (3.2.0)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>716
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>875
 ++AspNetCore.HealthChecks.UI.Client (3.1.2)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>704
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>850
 ++Autofac.Extensions.DependencyInjection (7.1.0)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>707
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>864
 ++AutofacSerilogIntegration (5.0.0)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>730
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>891
 ++EPPlus (5.5.2)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>717
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>876
 ++FluentValidation.AspNetCore (9.4.0)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>711
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>869
 ++MediatR.Extensions.Autofac.DependencyInjection (7.0.0)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>719
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>878
 ++MediatR.Extensions.Microsoft.DependencyInjection (9.0.0)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>728
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>889
 ++Microsoft.AspNetCore.Authentication.JwtBearer (3.1.14)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>724
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>883
 ++Microsoft.AspNetCore.Mvc.NewtonsoftJson (3.1.14)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>718
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>877
 ++Microsoft.EntityFrameworkCore (3.1.14)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>706
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>672
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>855
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>851
 ++Microsoft.Extensions.Configuration.Abstractions (3.1.14)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>708
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>674
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>865
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>856
 ++Microsoft.Extensions.DependencyModel (5.0.0)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>729
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>890
 ++MongoDB.Driver (2.12.3)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>715
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:>688
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>676
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>874
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:>849
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>859
 ++Nager.PublicSuffix (2.2.2)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>713
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>872
 ++Polly (7.2.1)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>723
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>882
 ++RabbitMQ.Client (5.1.2)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>721
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>880
 ++Serilog.AspNetCore (3.4.0)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>710
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>867
 ++Serilog.Sinks.Elasticsearch (8.4.1)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>705
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>852
 ++Steeltoe.Discovery.ClientCore (3.0.2)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>725
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>884
 ++Steeltoe.Discovery.Eureka (3.0.2)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>712
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>870
 ++Swashbuckle.AspNetCore (5.6.3)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>709
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>866
 ++Swashbuckle.AspNetCore.Annotations (6.1.4)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>714
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>873
 ++System.Data.SqlClient (4.8.2)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>720
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>879
 ++Winton.Extensions.Configuration.Consul (3.1.1)
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>722
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:>881
 ++Management.Domain
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.domain\bin\debug\netcoreapp3.1\management.domain.dll
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\bin\debug\netcoreapp3.1\management.domain.dll
 i:{00000000-0000-0000-0000-000000000000}:Management.Domain
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.domain\bin\debug\netcoreapp3.1\management.domain.dll
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\bin\debug\netcoreapp3.1\management.domain.dll
 ++Management.Infrastructure
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\bin\debug\netcoreapp3.1\management.infrastructure.dll
+i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\bin\debug\netcoreapp3.1\management.infrastructure.dll
 i:{00000000-0000-0000-0000-000000000000}:Management.Infrastructure
+++GroupAggregate
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\groupaggregate\
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\queries\groupaggregate\
+++Group.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\groupaggregate\group.cs
+++IGroupRepository.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\groupaggregate\igrouprepository.cs
+++GroupUserAggregate
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\groupuseraggregate\
+++GroupUser.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\groupuseraggregate\groupuser.cs
+++IGroupUserRepository.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\groupuseraggregate\igroupuserrepository.cs
+++OrganizationAggregate
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\organizationaggregate\
+++IOrganizationRepository.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\organizationaggregate\iorganizationrepository.cs
+++Organization.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\organizationaggregate\organization.cs
+++OrganizationUserAggregate
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\organizationuseraggregate\
+++IOrganizationUserRepository.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\organizationuseraggregate\iorganizationuserrepository.cs
+++OrganizationUser.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\organizationuseraggregate\organizationuser.cs
 ++UserAggregate
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\huongviet\training\microservice-template-develop\src\admin\management.domain\models\useraggregate\
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\useraggregate\
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\queries\useraggregate\
 ++IUserRepository.cs
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\huongviet\training\microservice-template-develop\src\admin\management.domain\models\useraggregate\iuserrepository.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\useraggregate\iuserrepository.cs
 ++User.cs
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\huongviet\training\microservice-template-develop\src\admin\management.domain\models\useraggregate\user.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\models\useraggregate\user.cs
+++GroupDto.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\queries\groupaggregate\groupdto.cs
+++IUserQueries.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\queries\useraggregate\iuserqueries.cs
+++UserDetailDto.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\queries\useraggregate\userdetaildto.cs
+++UserDto.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.domain\queries\useraggregate\userdto.cs
 ++MediatR (9.0.0)
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:>689
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:>854
 ++Microsoft.Extensions.Identity.Stores (5.0.1)
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:>690
-++MongoDB.Bson (2.12.3)
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:>691
-++EntityConfigurations
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\entityconfigurations\
-++UserEntityTypeConfiguration.cs
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\entityconfigurations\userentitytypeconfiguration.cs
-++Factories
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\factories\
-++Migrations
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\migrations\
-++Repositories
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\repositories\
-++UserRepository.cs
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\repositories\userrepository.cs
-++ApplicationDbContext.cs
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\applicationdbcontext.cs
-++UserResource.en-us.resx
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\properties\userresource.en-us.resx
-++UserResource.resx
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\properties\userresource.resx
-++UserResource.vi.resx
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\properties\userresource.vi.resx
-++UserResource.vi-vn.resx
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\properties\userresource.vi-vn.resx
-++ApplicationDbContextFatoryDesign.cs
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\factories\applicationdbcontextfatorydesign.cs
-++Dapper (2.0.78)
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>677
-++IdentityServer4.EntityFramework (4.1.1)
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>678
-++Microsoft.AspNetCore.Identity.EntityFrameworkCore (3.1.14)
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>679
-++Microsoft.EntityFrameworkCore.Design (3.1.14)
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>675
-++Microsoft.EntityFrameworkCore.SqlServer (3.1.14)
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>673
-++Microsoft.EntityFrameworkCore.Tools (3.1.14)
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>680
-++UserResource.Designer.cs
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\properties\userresource.designer.cs
-++UserApp
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\application\userapp\
-++20220316014740_160322v1.cs
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\migrations\20220316014740_160322v1.cs
-++20220316014740_160322v1.Designer.cs
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\migrations\20220316014740_160322v1.designer.cs
-++ApplicationDbContextModelSnapshot.cs
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\migrations\applicationdbcontextmodelsnapshot.cs
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:>868
 ++Microsoft.IdentityModel.Tokens (6.8.0)
-i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:>795
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:>857
+++MongoDB.Bson (2.12.3)
+i:{b0ce03ee-f912-4a34-a801-b6d1e4f7b330}:>871
+++UserResource.en-us.resx
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\properties\userresource.en-us.resx
+++UserResource.resx
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\properties\userresource.resx
+++UserResource.vi.resx
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\properties\userresource.vi.resx
+++UserResource.vi-vn.resx
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\properties\userresource.vi-vn.resx
+++EntityConfigurations
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\entityconfigurations\
+++GroupEntityTypeConfiguration.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\entityconfigurations\groupentitytypeconfiguration.cs
+++GroupUserEntityTypeConfiguration.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\entityconfigurations\groupuserentitytypeconfiguration.cs
+++OrganizationEntityTypeConfiguration.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\entityconfigurations\organizationentitytypeconfiguration.cs
+++OrganizationUserEntityTypeConfiguration.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\entityconfigurations\organizationuserentitytypeconfiguration.cs
+++UserEntityTypeConfiguration.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\entityconfigurations\userentitytypeconfiguration.cs
+++Factories
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\factories\
+++ApplicationDbContextFatoryDesign.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\factories\applicationdbcontextfatorydesign.cs
+++Migrations
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\
+++20220316014740_160322v1.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220316014740_160322v1.cs
 ++20220316020629_160322v2.cs
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\migrations\20220316020629_160322v2.cs
-++20220316020629_160322v2.Designer.cs
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\migrations\20220316020629_160322v2.designer.cs
-++NewFolder
-++Validators
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\application\userapp\commands\validators\
-++CreateUserCommandValidator.cs
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\application\userapp\commands\validators\createusercommandvalidator.cs
-++UpdateUserCommand.cs
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\application\userapp\commands\models\updateusercommand.cs
-++UpdateUserCommandHandler.cs
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\application\userapp\commands\handlers\updateusercommandhandler.cs
-++ICommonHelper.cs
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\helper\icommonhelper.cs
-++Helper
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\helper\
-++CommonHelper.cs
-i:{92c357e5-17e2-403f-b6a0-f00807f55529}:c:\huongviet\training\microservice-template-develop\src\admin\management.api\helper\commonhelper.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220316020629_160322v2.cs
 ++20220316041751_160322v3.cs
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\migrations\20220316041751_160322v3.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220316041751_160322v3.cs
+++20220317030328_170322v1.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220317030328_170322v1.cs
+++20220317081924_170322v2.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220317081924_170322v2.cs
+++20220317083337_170322v3.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220317083337_170322v3.cs
+++20220317102313_170322v4.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220317102313_170322v4.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\applicationdbcontextmodelsnapshot.cs
+++UserQueries.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\queries\userqueries.cs
+++Repositories
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\repositories\
+++GroupRepository.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\repositories\grouprepository.cs
+++GroupUserRepository.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\repositories\groupuserrepository.cs
+++OrganizationRepository.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\repositories\organizationrepository.cs
+++OrganizationUserRepository.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\repositories\organizationuserrepository.cs
+++UserRepository.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\repositories\userrepository.cs
+++ApplicationDbContext.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\applicationdbcontext.cs
+++UserResource.Designer.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\properties\userresource.designer.cs
+++20220316014740_160322v1.Designer.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220316014740_160322v1.designer.cs
+++20220316020629_160322v2.Designer.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220316020629_160322v2.designer.cs
 ++20220316041751_160322v3.Designer.cs
-i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\huongviet\training\microservice-template-develop\src\admin\management.infrastructure\migrations\20220316041751_160322v3.designer.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220316041751_160322v3.designer.cs
+++20220317030328_170322v1.Designer.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220317030328_170322v1.designer.cs
+++20220317081924_170322v2.Designer.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220317081924_170322v2.designer.cs
+++20220317083337_170322v3.Designer.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220317083337_170322v3.designer.cs
+++20220317102313_170322v4.Designer.cs
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:c:\users\thinh\onedrive\desktop\trainingcqrs\microservice-template-develop\src\admin\management.infrastructure\migrations\20220317102313_170322v4.designer.cs
+++Dapper (2.0.78)
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>860
+++IdentityServer4.EntityFramework (4.1.1)
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>861
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (3.1.14)
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>862
+++Microsoft.EntityFrameworkCore.Design (3.1.14)
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>858
+++Microsoft.EntityFrameworkCore.SqlServer (3.1.14)
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>853
+++Microsoft.EntityFrameworkCore.Tools (3.1.14)
+i:{43c1dc18-0828-42b1-b436-13a5c411ad1a}:>863

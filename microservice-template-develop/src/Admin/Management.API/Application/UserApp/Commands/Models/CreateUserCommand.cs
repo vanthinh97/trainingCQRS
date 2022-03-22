@@ -17,4 +17,5 @@ namespace Management.API.Application.UserApp.Commands.Models
         public List<int> GroupIds { get; set; }
         public List<int> OrganizationIds { get; set; }
     }
+
 }
