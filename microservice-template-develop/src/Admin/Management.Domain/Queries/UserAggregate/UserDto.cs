@@ -7,8 +7,11 @@ namespace Management.Domain.Queries.UserAggregate
 {
     public class UserDto
     {
-        public string FirstName { get; set; }
+        public string FullName { get; set; }
         public string Email { get; set; }
+        public int RoleId { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public int IsDeleted { get; set; }
         [IgnoreDataMember]
         public int TotalRecord { get; set; }
     }

@@ -31,7 +31,15 @@ namespace Management.API.Application.UserApp.Queries.Handlers
         /// <exception cref="System.NotImplementedException"></exception>
         public async Task<JsonResponse<Pagination<UserDto>>> Handle(GetUsersQuery request, CancellationToken cancellationToken)
         {
-            var users = await _userQueries.GetListAsync(request.Keyword, request.PageNumber, request.PageSize);
+            var users = await _userQueries.GetListAsync(
+                request.isActive,
+                request.ArrangeType, 
+                request.Keyword, 
+                request.RoleIds, 
+                request.fromDate, 
+                request.toDate, 
+                request.PageNumber, 
+                request.PageSize);
             return new OkResponse<Pagination<UserDto>> ("OK",new Pagination<UserDto>
             {
               //  TotalRecord = users.FirstOrDefault() != null ? users.FirstOrDefault().TotalRecord : 0,

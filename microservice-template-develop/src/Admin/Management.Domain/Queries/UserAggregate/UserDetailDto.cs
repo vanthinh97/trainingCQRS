@@ -6,16 +6,17 @@ namespace Management.Domain.Queries.UserAggregate
 {
     public class UserDetailDto
     {
-        public UserDetailDto(string firstName, string email, List<GroupDto> groupDtos)
+        public UserDetailDto(string fullName, string email, int roleId, List<GroupDto> groupDtos)
         {
-            FirstName = firstName;
+            FullName = fullName;
             Email = email;
+            RoleId = roleId;
             this.groupDtos = groupDtos;
         }
 
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string FullName { get; set; }
         public string Email { get; set; }
+        public int RoleId { get; set; }
         public DateTime? BirthDay { get; set; }
         public List<GroupDto> groupDtos { get; set; }
     }

@@ -7,7 +7,15 @@ namespace Management.Domain.Queries.UserAggregate
 {
     public interface IUserQueries
     {
-        Task<IEnumerable<UserDto>> GetListAsync(string keyword, int? pageNumber, int? pageSize);
+        Task<IEnumerable<UserDto>> GetListAsync(
+            int? isActive,
+            int? arrangeType, 
+            string keyword, 
+            List<int?> roleIds, 
+            string fromDate,
+            string toDate,
+            int? pageNumber, 
+            int? pageSize);
         Task<UserDetailDto> GetDetailAsync(int id);
 
     }

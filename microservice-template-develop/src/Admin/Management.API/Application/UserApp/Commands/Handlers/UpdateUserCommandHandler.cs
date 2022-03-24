@@ -36,8 +36,14 @@ namespace Management.API.Application.UserApp.Commands.Handlers
             {
                 return new BadRequestResponse<int>("K tim thay user", null);
             }
-            
-            user.Update(request.FirstName, request.LastName, request.BirthDay);
+
+            var checkEmail = await _userRepository.GetByEmailAsync(request.Email);
+            if (checkEmail != null)
+            {
+                return new BadRequestResponse<int>("Email đã tồn tại", null);
+            }
+
+            user.Update(request.FirstName, request.LastName, request.Email, request.BirthDay);
 
             if (!await _userRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken))
             {

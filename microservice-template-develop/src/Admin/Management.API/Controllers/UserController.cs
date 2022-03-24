@@ -45,7 +45,7 @@ namespace Management.API.Controllers
         /// <param name="cancellationToken"></param>
         /// <returns></returns>
         [Route("update")]
-        [HttpPost]
+        [HttpPut]
         [ProducesResponseType(typeof(JsonResponse<int>), (int)HttpStatusCode.OK)]
         public async Task<IActionResult> UpdateUserAsync([FromBody] UpdateUserCommand command, CancellationToken cancellationToken)
         {

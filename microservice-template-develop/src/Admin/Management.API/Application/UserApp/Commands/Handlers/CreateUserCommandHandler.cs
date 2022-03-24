@@ -71,7 +71,14 @@ namespace Management.API.Application.UserApp.Commands.Handlers
 
 
             //Add user
-            var user = new User(request.FirstName, request.LastName, request.Email, request.Password, request.BirthDay);
+            var user = new User(
+                request.Code, 
+                request.FirstName, 
+                request.LastName, 
+                request.Email, 
+                request.Password, 
+                request.BirthDay, 
+                request.RoleId);
             user.AddGroup(request.GroupIds);
             user.AddOrganization(request.OrganizationIds);
             await _userRepository.AddAsync(user);
@@ -81,7 +88,6 @@ namespace Management.API.Application.UserApp.Commands.Handlers
             {
                 return new BadRequestResponse<int>("Đã xảy ra lỗi", null);
             }
-
 
             return new OkResponse<int>("OK", user.Id);
         }

@@ -11,22 +11,6 @@ namespace Management.Domain.Models.UserAggregate
     {
         private List<GroupUser> _groupUsers;
         private List<OrganizationUser> _organizationUsers;
-        /// <summary>
-        /// Hàm khởi tạo của lớp <see cref="User"/>
-        /// </summary>
-        /// <param name="firstName"></param>
-        /// <param name="lastName"></param>
-        /// <param name="email"></param>
-        /// <param name="password"></param>
-        /// <param name="birthDay"></param>
-        public User(string firstName, string lastName, string email, string password, DateTime? birthDay) : this()
-        {
-            FirstName = firstName;
-            LastName = lastName;
-            Email = email;
-            Password = password;
-            BirthDay = birthDay;
-        }
 
         public User()
         {
@@ -34,11 +18,43 @@ namespace Management.Domain.Models.UserAggregate
             _organizationUsers = new List<OrganizationUser>();
         }
 
-        public void Update(string firstName, string lastName,  DateTime? birthDay)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="code"></param>
+        /// <param name="firstName"></param>
+        /// <param name="lastName"></param>
+        /// <param name="email"></param>
+        /// <param name="phone"></param>
+        /// <param name="password"></param>
+        /// <param name="birthDay"></param>
+        /// <param name="roleId"></param>
+        public User(
+            string code, 
+            string firstName, 
+            string lastName,
+            string email, 
+            string password, 
+            DateTime? birthDay,
+            int? roleId) : this()
+        {
+            Code = code;
+            FirstName = firstName;
+            LastName = lastName;
+            Email = email;
+            Password = password;
+            BirthDay = birthDay;
+            RoleId = roleId;
+        }
+
+     
+
+        public void Update(string firstName, string lastName, string email ,DateTime? birthDay)
         {
             FirstName = firstName;
             LastName = lastName;
             BirthDay = birthDay;
+            Email = email;
         }
 
         public IReadOnlyCollection<GroupUser> GroupUsers => _groupUsers ??= new List<GroupUser>();
@@ -60,13 +76,13 @@ namespace Management.Domain.Models.UserAggregate
             }
         }
 
+        public string Code { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Password { get; set; }
         public DateTime? BirthDay { get; set; }
-
-   
+        public int? RoleId { get; set; }
     }
 }
